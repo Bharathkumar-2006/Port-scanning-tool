@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Scan Result</h1>
+        {% for ip, results in scan_results.items() %}
+            <h2>IP: {{ ip }} (Domain: {{ results['domain_name'] }})</h2>
+            <table>
+                <tr>
+                    <th>Port</th>
+                    <th>Service Name</th>
+                    <th>Status</th>
+                </tr>
+                {% for port_data in results['ports'] %}
+                    <tr>
+                        <td>{{ port_data['port'] }}</td>
+                        <td>{{ get_service_name(port_data['port']) }}</td>
+                        <td>{{ port_data['status'] }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% endfor %}
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>

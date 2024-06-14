@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Port Scanner</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Port Scanner</h1>
+        <form action="/scan" method="post">
+            <label for="domain_name">Enter Domain Name (or you can give ip address below):</label>
+            <input type="text" id="domain_name" name="domain_name"><br><br>
+            <label for="start_ip">Enter IP to scan (single IP or start of range):</label>
+            <input type="text" id="start_ip" name="start_ip"><br><br>
+            <label for="end_ip">Enter End IP to scan (leave blank for single IP):</label>
+            <input type="text" id="end_ip" name="end_ip"><br><br>
+            <label for="start_port">Enter Start Port:</label>
+            <input type="number" id="start_port" name="start_port" required><br><br>
+            <label for="end_port">Enter End Port:</label>
+            <input type="number" id="end_port" name="end_port" required><br><br>
+            <input type="submit" value="Start Scan">
+        </form>
+    </div>
+</body>
+</html>
