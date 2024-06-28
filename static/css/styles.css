@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #b37fe4; /* Light green background */
+    background-color: #b37fe4; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -15,14 +15,14 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     text-align: center;
-    max-width: 800px;  /* Increase the maximum width */
-    width: 100%;       /* Ensure it takes up the full width */
-    margin: 20px;      /* Add some margin */
-    color: #fff;       /* White text for better contrast */
+    max-width: 800px;  
+    width: 100%;       
+    margin: 20px;      
+    color: #fff;       
 }
 
 h1, h2 {
-    color: #fff; /* White color for headings */
+    color: #fff; 
     margin-bottom: 20px;
 }
 
@@ -30,17 +30,17 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #fff; /* White color for labels */
+    color: #fff; 
 }
 
 input[type="text"],
 input[type="number"] {
-    width: calc(100% - 16px);  /* Adjust to fit within the container with padding */
+    width: calc(100% - 16px);  
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;    /* Ensure padding and border are included in the element's total width and height */
+    box-sizing: border-box;   
 }
 
 input[type="submit"] {
@@ -61,7 +61,7 @@ input[type="submit"]:hover {
 a {
     display: inline-block;
     margin-top: 20px;
-    color: #fff; /* White color for link */
+    color: #fff; 
     text-decoration: none;
 }
 
@@ -82,7 +82,7 @@ table, th, td {
 th, td {
     padding: 12px;
     text-align: left;
-    color: #333; /* Dark text for table content */
+    color: #333; 
 }
 
 th {
