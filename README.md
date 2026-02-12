@@ -27,7 +27,7 @@ cd port-scanning-tool
 pip install flask
 
 # Run the application
-python app.py
+python port_scanner_web.py
 
 #After running the application, open your browser and visit:
 http://127.0.0.1:5000/
