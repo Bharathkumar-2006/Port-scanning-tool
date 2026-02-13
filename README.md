@@ -18,7 +18,7 @@ The Port Scanning Tool is a web-based application developed using HTML, CSS, and
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/port-scanning-tool.git
+git clone https://github.com/Bharathkumar-2006/port-scanning-tool.git
 
 # Navigate to the project directory
 cd port-scanning-tool
